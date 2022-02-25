@@ -10,8 +10,11 @@ def display(winname,image):
 
 red = (0,0,255)
 green = (0,255,0)
+blue= (255,0,0)
 
 cv.line(canvas,(0,0),(300,300),green,2)
 cv.line(canvas,(300,0),(0,300),red,3)
+
+cv.rectangle(canvas,(60,60),(200,200),blue,5)
 
 display("canvas",canvas)
