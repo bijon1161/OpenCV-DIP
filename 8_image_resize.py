@@ -1,0 +1,12 @@
+import cv2 as cv
+import numpy as np
+
+img = cv.imread('./images/bird.jpg')
+
+def display(winname,image):
+    cv.imshow(winname,image)
+    cv.waitKey(0)
+    cv.destroyAllWindows()
+
+resize_img = cv.resize(img,(300,300),interpolation=cv.INTER_AREA)
+display("Resized Image",resize_img)
